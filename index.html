@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Home
+                API
               
             </span>
           
@@ -177,11 +177,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Home
+        API
       </label>
     
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
-      Home
+    <a href="." title="API" class="md-nav__link md-nav__link--active">
+      API
     </a>
     
       
@@ -472,10 +472,11 @@
               
                 
                 
-                  <h1>Home</h1>
+                  <h1>API</h1>
                 
                 <h2 id="_1">简介</h2>
 <p><a href="https://juejin.im/post/5e2c6a6e51882526b757cf2e">看这里</a></p>
+<p><a href="https://github.com/programmerauthor/spread-information">项目地址</a></p>
 <h2 id="host">HOST</h2>
 <pre><code>http://49.232.173.220:3001/
 </code></pre>
@@ -503,11 +504,6 @@
 <td>data/getAreaStat/:provice</td>
 <td>GET</td>
 <td>获取指定省份信息，例如：/data/getAreaStat/山东</td>
-</tr>
-<tr>
-<td>data/getNewest/:lastid</td>
-<td>GET</td>
-<td>获取最新事件</td>
 </tr>
 <tr>
 <td>data/getIndexRumorList</td>
@@ -540,9 +536,9 @@
 <td>全球海外其他地区患者分布数据</td>
 </tr>
 <tr>
-<td>data/getStatisticsService</td>
+<td>data/getNewest/:lastid</td>
 <td>GET</td>
-<td>获取整体统计信息</td>
+<td>获取最新事件 <br><code>lastid 代表上次获取到的最后的id</code><br><code>例如：/data/getNewest/281</code><br><code>将会返回id为281的事件之后发生的事件集合。</code></td>
 </tr>
 </tbody>
 </table>
